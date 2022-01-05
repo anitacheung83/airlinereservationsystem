@@ -10,14 +10,14 @@ public class Passenger {
     String firstName;
     String lastName;
     int phoneNumber; // can add regex in the future
-    Country passportCountry;
+    String passportCountry;
     String passportNumber;
     Gender gender;
     String emailAddress; // can add regex in the future
     Date dateOfBirth;
     PassengerAgeType passengerAgeType;
 
-    public Passenger(String firstName, String lastName, int phoneNumber, Country passportCountry, String passportNumber, Gender gender, String emailAddress, Date dateOfBirth, PassengerAgeType passengerAgeType) {
+    public Passenger(String firstName, String lastName, int phoneNumber, String passportCountry, String passportNumber, Gender gender, String emailAddress, Date dateOfBirth, PassengerAgeType passengerAgeType) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -53,11 +53,11 @@ public class Passenger {
         this.phoneNumber = phoneNumber;
     }
 
-    public Country getPassportCountry() {
+    public String getPassportCountry() {
         return passportCountry;
     }
 
-    public void setPassportCountry(Country passportCountry) {
+    public void setPassportCountry(String passportCountry) {
         this.passportCountry = passportCountry;
     }
 

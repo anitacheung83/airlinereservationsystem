@@ -47,6 +47,7 @@ public class TierEconomy implements Tier{
         return seats;
     }
 
+    @Override
     public int getCapacity() {
         return capacity;
     }

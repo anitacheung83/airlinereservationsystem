@@ -44,11 +44,9 @@ public class TierBusinessClass implements Tier {
         return seats;
     }
 
+    @Override
     public int getCapacity() {
         return capacity;
     }
 
-    public HashMap<String, seatTypeBusiness>[][] getSeatsPlan() {
-        return seatsPlan;
-    }
 }
