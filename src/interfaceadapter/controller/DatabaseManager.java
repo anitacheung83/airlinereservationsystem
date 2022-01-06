@@ -26,4 +26,8 @@ public class DatabaseManager {
 
         // Check if the email existed or not
     }
+
+    public void signUp(String firstName, String lastName, String email, String password){
+
+    }
 }
