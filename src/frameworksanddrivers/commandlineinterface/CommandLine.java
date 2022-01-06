@@ -25,7 +25,25 @@ public class CommandLine {
         }
     }
 
-    public void startSignUp() {
+    public void startSignUp() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+        System.out.println("Sign up here!");
+
+        System.out.println("Please enter your first name:");
+        String firstName = reader.readLine();
+
+        System.out.println("Please enter your last name:");
+        String lastName = reader.readLine();
+
+        System.out.println("Please enter your email:");
+        String email = reader.readLine();
+
+        System.out.println("Please enter your password:");
+        String password = reader.readLine();
+
+        System.out.println("Please confirm your password:");
+        String passwordConfirmed = reader.readLine();
+
 
     }
 
